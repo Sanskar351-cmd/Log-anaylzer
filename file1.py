@@ -2,7 +2,7 @@ import re
 from collections import Counter
 from pathlib import Path
 
-# Configuration Constants
+
 SUSPICIOUS_THRESHOLD = 3
 
 
@@ -12,7 +12,7 @@ def run_full_analyzer(file_path):
         print(f"\033[91m[-] Error: File not found at '{file_path}'\033[0m")
         return
 
-    # Regular expression for standard log line: YYYY-MM-DD HH:MM:SS [LEVEL] Message
+
     LOG_REGEX = re.compile(
     r"^(?P<timestamp>\d{4}-\d{2}-\d{2}[ T]\d{2}:\d{2}:\d{2}(?:\.\d+)?Z?)\s+"
     r"\[(?P<level>[A-Za-z]+)\]\s+"
@@ -55,9 +55,7 @@ def run_full_analyzer(file_path):
         print(f"\033[91m[-] Error reading file: {e}\033[0m")
         return
 
-    # =====================================================================
-    # STRUCTURED REPORT GENERATION OUTPUT
-    # =====================================================================
+    
     print("\033[92m" + "─" * 50)
     print(" 📊 METRICS & SECURITY INTELLIGENCE REPORT")
     print("─" * 50 + "\033[0m")
@@ -70,7 +68,6 @@ def run_full_analyzer(file_path):
     else:
         print("   └── No matching log lines found.")
 
-    # Part B: Top 10 Most Common Application Errors
     print("\n\033[91m[+] TOP 10 MOST COMMON APPLICATION ERRORS:\033[0m")
     if error_messages:
         for rank, (err, count) in enumerate(error_messages.most_common(10), 1):
@@ -78,7 +75,7 @@ def run_full_analyzer(file_path):
     else:
         print("   └── No application errors recorded.")
 
-    # Part C: Suspicious IP Tracker Threat Analysis
+  
     print("\n\033[96m[+] SECURITY ALERTS / SUSPICIOUS IP DETECTION:\033[0m")
     flagged_threats = False
     for ip, err_count in ip_error_tracker.items():
