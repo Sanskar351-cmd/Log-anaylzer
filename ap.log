@@ -1,0 +1,22 @@
+2026-08-30 14:10:01 [INFO] Server started successfully on port 8080.
+2026-08-30 14:10:05 [INFO] User standard logger initialized successfully.
+2026-08-30 14:11:12 [INFO] User 1042 authenticated successfully from 192.168.1.15.
+2026-08-30 14:15:22 [ERROR] Database connection failed from 10.0.0.4 - Connection timed out after 30000ms.
+2026-08-30 14:15:25 [ERROR] Database connection failed from 10.0.0.4 - Connection timed out after 30000ms.
+2026-08-30 14:15:28 [ERROR] Database connection failed from 10.0.0.4 - Connection timed out after 30000ms.
+2026-08-30 14:15:30 [ERROR] Database connection failed from 10.0.0.4 - Connection timed out after 30000ms.
+2026-08-30 14:16:05 [ERROR] User admin authentication failed from 192.168.1.99 - Invalid API Signature or token expired.
+2026-08-30 14:16:10 [ERROR] User admin authentication failed from 192.168.1.99 - Invalid API Signature or token expired.
+2026-08-30 14:16:15 [ERROR] User admin authentication failed from 192.168.1.99 - Invalid API Signature or token expired.
+2026-08-30 14:17:01 [INFO] Scheduled background job cache_cleanup completed in 420ms.
+2026-08-30 14:18:41 [ERROR] CRITICAL_EXC - AttributeError: 'NoneType' object has no attribute 'get_profile_data' at controller.py:42.
+2026-08-30 14:18:45 [ERROR] CRITICAL_EXC - AttributeError: 'NoneType' object has no attribute 'get_profile_data' at controller.py:42.
+2026-08-30 14:22:10 [CRITICAL] System check failed - java.lang.OutOfMemoryError: Java heap space. Process terminated by OS.
+2026-08-30 14:25:19 [ERROR] File IO Exception - PermissionError: [Errno 13] Permission denied: '/var/www/uploads/receipt_992.pdf'.
+2026-08-30 14:29:02 [ERROR] External Service Gateway Failure - HTTP status 503 received from ://stripe.com.
+2026-08-30 14:31:55 [ERROR] Initialization failed - FileNotFoundError: [Errno 2] No such file or directory: 'config/production.env'.
+2026-08-30 14:35:11 [ERROR] Transaction aborted - Process 4104 deadlock detected while waiting for lock on table 'orders'.
+2026-08-30 14:40:08 [ERROR] Payload ingestion dropped - ValueError: Field 'phone_number' expected integer format, received string 'N/A' from client_ip 185.22.14.9.
+2026-08-30 14:43:00 [WARNING] Disk space utilization at 98% threshold.
+2026-08-30 14:44:50 [CRITICAL] System storage failure - OSError: [Errno 28] No space left on device while writing cache chunk.
+2026-08-30 14:45:00 [INFO] User standard logger initialized successfully.
